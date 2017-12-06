@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13532" systemVersion="17B42a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="WeatherData" representedClassName="WeatherData" syncable="YES" codeGenerationType="class">
+        <attribute name="temperatura" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeWeather" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="WeatherData" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>

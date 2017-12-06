@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		1B23192F1FD70B0900C4F95D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B23192E1FD70B0900C4F95D /* AppDelegate.swift */; };
-		1B2319311FD70B0900C4F95D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2319301FD70B0900C4F95D /* ViewController.swift */; };
+		1B2319311FD70B0900C4F95D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2319301FD70B0900C4F95D /* MapViewController.swift */; };
 		1B2319341FD70B0900C4F95D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2319321FD70B0900C4F95D /* Main.storyboard */; };
 		1B2319371FD70B0900C4F95D /* TestEfectura.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B2319351FD70B0900C4F95D /* TestEfectura.xcdatamodeld */; };
 		1B2319391FD70B0900C4F95D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2319381FD70B0900C4F95D /* Assets.xcassets */; };
 		1B23193C1FD70B0900C4F95D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B23193A1FD70B0900C4F95D /* LaunchScreen.storyboard */; };
+		1B2319481FD7E75700C4F95D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2319471FD7E75700C4F95D /* Weather.swift */; };
+		1B23194C1FD7EEB300C4F95D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B23194B1FD7EEB300C4F95D /* NetworkService.swift */; };
+		1B23194E1FD838DA00C4F95D /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B23194D1FD838DA00C4F95D /* HistoryTableViewController.swift */; };
+		1B2319501FD849E600C4F95D /* HistoryDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B23194F1FD849E600C4F95D /* HistoryDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B23192B1FD70B0900C4F95D /* TestEfectura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestEfectura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B23192E1FD70B0900C4F95D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B2319301FD70B0900C4F95D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B2319301FD70B0900C4F95D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1B2319331FD70B0900C4F95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B2319361FD70B0900C4F95D /* TestEfectura.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestEfectura.xcdatamodel; sourceTree = "<group>"; };
 		1B2319381FD70B0900C4F95D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B23193B1FD70B0900C4F95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B23193D1FD70B0900C4F95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2319471FD7E75700C4F95D /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		1B23194B1FD7EEB300C4F95D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1B23194D1FD838DA00C4F95D /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		1B23194F1FD849E600C4F95D /* HistoryDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		1B23192D1FD70B0900C4F95D /* TestEfectura */ = {
 			isa = PBXGroup;
 			children = (
+				1B2319431FD70B1100C4F95D /* Application */,
+				1B2319521FD85C9D00C4F95D /* Supporting files */,
+			);
+			path = TestEfectura;
+			sourceTree = "<group>";
+		};
+		1B2319431FD70B1100C4F95D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1B2319461FD70B3A00C4F95D /* Model */,
+				1B2319451FD70B2D00C4F95D /* View */,
+				1B2319441FD70B2000C4F95D /* Controller */,
+				1B2319511FD85C7D00C4F95D /* Networking */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1B2319441FD70B2000C4F95D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B2319301FD70B0900C4F95D /* MapViewController.swift */,
+				1B23194D1FD838DA00C4F95D /* HistoryTableViewController.swift */,
+				1B23194F1FD849E600C4F95D /* HistoryDataViewController.swift */,
 				1B23192E1FD70B0900C4F95D /* AppDelegate.swift */,
-				1B2319301FD70B0900C4F95D /* ViewController.swift */,
-				1B2319321FD70B0900C4F95D /* Main.storyboard */,
-				1B2319381FD70B0900C4F95D /* Assets.xcassets */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B2319451FD70B2D00C4F95D /* View */ = {
+			isa = PBXGroup;
+			children = (
 				1B23193A1FD70B0900C4F95D /* LaunchScreen.storyboard */,
+				1B2319321FD70B0900C4F95D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B2319461FD70B3A00C4F95D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B2319471FD7E75700C4F95D /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B2319511FD85C7D00C4F95D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1B23194B1FD7EEB300C4F95D /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1B2319521FD85C9D00C4F95D /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				1B2319381FD70B0900C4F95D /* Assets.xcassets */,
 				1B23193D1FD70B0900C4F95D /* Info.plist */,
 				1B2319351FD70B0900C4F95D /* TestEfectura.xcdatamodeld */,
 			);
-			path = TestEfectura;
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B2319311FD70B0900C4F95D /* ViewController.swift in Sources */,
+				1B2319481FD7E75700C4F95D /* Weather.swift in Sources */,
+				1B2319311FD70B0900C4F95D /* MapViewController.swift in Sources */,
 				1B2319371FD70B0900C4F95D /* TestEfectura.xcdatamodeld in Sources */,
+				1B23194E1FD838DA00C4F95D /* HistoryTableViewController.swift in Sources */,
+				1B2319501FD849E600C4F95D /* HistoryDataViewController.swift in Sources */,
+				1B23194C1FD7EEB300C4F95D /* NetworkService.swift in Sources */,
 				1B23192F1FD70B0900C4F95D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +344,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35Z3V435NR;
-				INFOPLIST_FILE = TestEfectura/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestEfectura/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ruslan-rudenya-mail.ru.TestEfectura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +360,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35Z3V435NR;
-				INFOPLIST_FILE = TestEfectura/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestEfectura/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ruslan-rudenya-mail.ru.TestEfectura";
 				PRODUCT_NAME = "$(TARGET_NAME)";
